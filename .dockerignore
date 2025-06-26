@@ -1,0 +1,6 @@
+**/*.swp
+**/*.secret
+.git
+.env
+*.sqlite
+*.back

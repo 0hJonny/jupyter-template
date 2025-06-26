@@ -1,0 +1,72 @@
+# .gitignore
+*.back.ut
+
+### Python ###
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+venv/
+env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+### Docker ###
+# Docker compose
+docker-compose.override.yml
+
+# Volumes
+**/volumes/
+
+### JupyterHub ###
+# Database files
+*.sqlite
+*.db
+
+# Cookie secret
+jupyterhub_cookie_secret
+*.secret
+
+# Configuration backups
+*-backup.py
+
+### System ###
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+### Logs ###
+*.log
+logs/
+
+### Certificates ###
+# Не коммитить реальные сертификаты!
+*.key
+*.crt
+*.pem
+
+### Environment variables ###
+.env
+.secrets
+
+### Build artifacts ###
+__pycache__/
+build/
+dist/
+*.egg-info/
+
+### Kubernetes ###
+kubeconfig.yaml
+helm-charts/charts/
